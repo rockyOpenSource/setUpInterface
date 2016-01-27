@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gnM-li-y51">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--签到-->
+        <scene sceneID="1fd-vV-K9T">
+            <objects>
+                <viewController id="gnM-li-y51" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aPO-13-vuc"/>
+                        <viewControllerLayoutGuide type="bottom" id="6b2-if-pr7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BhV-ha-hN1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7N-43-YWm">
+                                <rect key="frame" x="277" y="203" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="IkM-Tv-jgl"/>
+                                    <constraint firstAttribute="height" constant="30" id="VpN-Uv-CKf"/>
+                                </constraints>
+                                <state key="normal" title="签到"/>
+                                <connections>
+                                    <action selector="registration:" destination="gnM-li-y51" eventType="touchUpInside" id="g11-Nd-75j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X7N-43-YWm" firstAttribute="centerY" secondItem="BhV-ha-hN1" secondAttribute="centerY" constant="-82" id="C5O-pv-Iz7"/>
+                            <constraint firstItem="X7N-43-YWm" firstAttribute="centerX" secondItem="BhV-ha-hN1" secondAttribute="centerX" id="hOg-Mj-D9W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="签到" id="wpB-Pm-zht"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChL-O6-9v6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="102"/>
+        </scene>
+    </scenes>
+</document>
